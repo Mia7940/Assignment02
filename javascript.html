@@ -164,19 +164,33 @@
    h1 {
     font-size: 50px;
 
-       function webpageChanger() {
-document getElementById(button2
 
    }
 
     </style>
 
     <script>
-   function webpageChanger() {
-document getElementById("button2").innerHTML= "the number will be increased by 1";
-
+        var myFirstVariable = 25;
+      var mySecondVariable = 3;
+        var myThirdVariable = 10;
+        var myFourthVariable = 100
+        
+   function myFirstFunction() {
+       myFirstVariable = myfirstVariable + 5;
    }
         
+       function mySecondFunction() {
+       mySecondVariable = mySecondVariable * 2;
+       }
+       
+       function myThirdFunction() {
+       myThirdVariable = myThirdVariable + 10;
+       }
+       function myFourthFunction() {
+       myFourthVariable = myFourthVariable /5;
+       
+   }
+   
     </script>
 </head>
 
@@ -206,7 +220,7 @@ document getElementById("button2").innerHTML= "the number will be increased by 1
 
     <div class="button2"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
         <button>
-onlick
+
 
         </button>
     </div>
@@ -221,8 +235,7 @@ onlick
     </div>
 
     <div class="button4" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
-
+        <button onclick = "mySecondFunction();"> Click to double
 
         </button>
 
@@ -230,16 +243,16 @@ onlick
    
     
     <div class="button5" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button class="displayButton">
+        <button class="displayButton" onclick =>
 
 <h1>B</h1>
         </button>
 
     </div>
+    
     <div class="button6" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
-
-
+        <button onclick = "myFirstFunction();"> Click to Add 5
+            
         </button>
 
     </div>
