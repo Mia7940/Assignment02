@@ -173,21 +173,27 @@
         var myFirstVariable = 25;
       var mySecondVariable = 3;
         var myThirdVariable = 10;
-        var myFourthVariable = 100
+        var myFourthVariable = 100;
         
    function myFirstFunction() {
-       myFirstVariable = myfirstVariable + 5;
+       myFirstVariable = myFirstVariable + 5;
+       document.getElementById("b1")=.innerHTML = myFirstVariable;
    }
         
        function mySecondFunction() {
-       mySecondVariable = mySecondVariable * 2;
+       myFirstVariable = myFirstVariable * 2;
+       document.getElementById("b2")=.innerHTML = myFirstVariable;
        }
        
        function myThirdFunction() {
-       myThirdVariable = myThirdVariable + 10;
+       myFirstVariable = myFirstVariable + 10;
+       document.getElementById("b3")=.innerHTML = myFirstVariable;
+
        }
        function myFourthFunction() {
-       myFourthVariable = myFourthVariable /5;
+        mySecondVariable =  mySecondVariable /5;
+       document.getElementById("b4")=.innerHTML =  mySecondVariable;
+
        
    }
    
@@ -220,14 +226,14 @@
 
     <div class="button2"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
         <button>
-
+<p id= "b1">Click to Add 5</p>
 
         </button>
     </div>
 
     <div class="button3"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
         <button>
-
+<p id= "b2">Click to Add 5</p>
 
         </button>
 
@@ -235,9 +241,9 @@
     </div>
 
     <div class="button4" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button onclick = "mySecondFunction();"> Click to double
-
-        </button>
+        <button onclick = "myFouthFunction();"> 
+<p id = "b3">Click to double</p>
+    </button>
 
     </div>
    
