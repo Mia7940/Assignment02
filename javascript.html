@@ -172,31 +172,54 @@
     <script>
         var myFirstVariable = 25;
       var mySecondVariable = 3;
-        var myThirdVariable = 10;
-        var myFourthVariable = 100;
+        var myThirdVariable = 100;
+    
         
    function myFirstFunction() {
        myFirstVariable = myFirstVariable + 5;
-       document.getElementById("b1")=.innerHTML = myFirstVariable;
+       document.getElementById("b1").innerHTML = myFirstVariable;
    }
         
        function mySecondFunction() {
        myFirstVariable = myFirstVariable * 2;
-       document.getElementById("b2")=.innerHTML = myFirstVariable;
+       document.getElementById("b2").innerHTML = myFirstVariable;
        }
        
        function myThirdFunction() {
        myFirstVariable = myFirstVariable + 10;
-       document.getElementById("b3")=.innerHTML = myFirstVariable;
+       document.getElementById("b3").innerHTML = myFirstVariable;
 
        }
        function myFourthFunction() {
-        mySecondVariable =  mySecondVariable /5;
-       document.getElementById("b4")=.innerHTML =  mySecondVariable;
-
-       
+        mySecondVariable =  mySecondVariable * 5;
+       document.getElementById("b4").innerHTML =  mySecondVariable;
+           
    }
-   
+     function myFifthFunction() {
+        mySecondVariable =  mySecondVariable + 9;
+       document.getElementById("b5").innerHTML =  mySecondVariable;
+
+     }
+          function mySixthFunction() {
+        mySecondVariable =  mySecondVariable / .5;
+       document.getElementById("b6").innerHTML =  mySecondVariable;
+
+          }
+          function mySeventhFunction() {
+        myThirdVariable =  myThirdVariable / 10;
+       document.getElementById("b7").innerHTML =  myThirdVariable;
+              
+          }
+         function myEighthFunction() {
+        myThirdVariable =  myThirdVariable + 100;
+       document.getElementById("b8").innerHTML =  myThirdVariable;
+
+         }
+         function myNinethhFunction() {
+        myThirdVariable =  myThirdVariable - 5;
+       document.getElementById("b4").innerHTML =  myThirdVariable;
+         }
+
     </script>
 </head>
 
@@ -225,15 +248,15 @@
     </div>
 
     <div class="button2"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
-<p id= "b1">Click to Add 5</p>
+        <button onclick="myFirstFunction()";>
+<p id="b1">Click to Add 5</p>
 
         </button>
     </div>
 
     <div class="button3"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
-<p id= "b2">Click to Add 5</p>
+        <button onclick="mySecondFunction();">
+<p id="b2">Click to Double</p>
 
         </button>
 
@@ -241,8 +264,8 @@
     </div>
 
     <div class="button4" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button onclick = "myFouthFunction();"> 
-<p id = "b3">Click to double</p>
+        <button onclick="myThirdFunction();"> 
+<p id="b3">Click to Add 10</p>
     </button>
 
     </div>
@@ -257,8 +280,8 @@
     </div>
     
     <div class="button6" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button onclick = "myFirstFunction();"> Click to Add 5
-            
+        <button onclick="myFourthFunction();"> 
+            <p id="b4">Click to Divide by 10</p>
         </button>
 
     </div>
