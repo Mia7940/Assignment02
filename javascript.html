@@ -1,4 +1,4 @@
-uui9<html>
+``uui9<html>
 <head>
     <title>Triple Number Tracker</title>
     <style>
@@ -172,7 +172,7 @@ uui9<html>
     <script>
         var myFirstVariable = 25;
       var mySecondVariable = 3;
-        var myThirdVariable = 100;
+        var myThirdVariable = 1000;
     
         
    function myFirstFunction() {
@@ -201,7 +201,7 @@ uui9<html>
 
      }
           function mySixthFunction() {
-        mySecondVariable =  mySecondVariable / .5;
+        mySecondVariable =  mySecondVariable * 3;
        document.getElementById("b6").innerHTML =  mySecondVariable;
 
           }
@@ -211,11 +211,11 @@ uui9<html>
               
           }
          function myEighthFunction() {
-        myThirdVariable =  myThirdVariable + 100;
+        myThirdVariable =  myThirdVariable - 100;
        document.getElementById("b8").innerHTML =  myThirdVariable;
 
          }
-         function myNinethhFunction() {
+         function myNinethFunction() {
         myThirdVariable =  myThirdVariable - 5;
        document.getElementById("b9").innerHTML =  myThirdVariable;
          }
@@ -281,26 +281,26 @@ uui9<html>
     
     <div class="button6" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
         <button onclick="myFourthFunction();"> 
-            <p id="b4">Click to Divide by 10</p>
+            <p id="b4">Click to Multiply by 5</p>
         </button>
 
     </div>
     <div class="button7" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
+        <button onclick="myFiFthFunction();">
 
-
+<p id="b5">Click to Add 9"</p>
         </button>
 
     </div>
     <div class="button8" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
+        <button onclick="mySixthFunction();">
 
-
+<p id="b6">Click to Multiply by 3</p>
         </button>
 
     </div>
     <div class="button9" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button  class="displayButton">
+        <button class="displayButton">
 
 <h1>C</h1>
         </button>
@@ -308,23 +308,23 @@ uui9<html>
     </div>
 
     <div class="button10" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
+        <button onclick="mySeventhFunction"();">
 
-
+<p id="b7">Click to Divide by 10</p>
         </button>
 
     </div>
     <div class="button11" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
+        <button onclick="myEighthFunction();">
 
-
+<p id="b8">CLick to Subtract by 100</p>
         </button>
 
     </div>
     <div class="button12" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
+        <button onclick="myNinethFunction();">
 
-
+<p id="b9">Click to Subtract 5</p>
         </button>
 
     </div>
